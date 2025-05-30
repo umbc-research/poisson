@@ -1,0 +1,12 @@
+[gobbert@taki-usr1 source211002_Intel2021a]$ make
+mpiicc -qopt-zmm-usage=high -xCORE-AVX512 -O3 -std=c99 -Wall -mkl  -DPARALLEL  -DBUILD_DATE=\"2021-10-02::T02:23:35\" -DBUILD_DIR=\"/umbc/xfs1/gobbert/common/research/poisson/takiFirstTests/source211002_Intel2021a\"  -c main.c -o main.o
+mpiicc -qopt-zmm-usage=high -xCORE-AVX512 -O3 -std=c99 -Wall -mkl  -DPARALLEL  -DBUILD_DATE=\"2021-10-02::T02:23:35\" -DBUILD_DIR=\"/umbc/xfs1/gobbert/common/research/poisson/takiFirstTests/source211002_Intel2021a\"  -c memory.c -o memory.o
+mpiicc -qopt-zmm-usage=high -xCORE-AVX512 -O3 -std=c99 -Wall -mkl  -DPARALLEL  -DBUILD_DATE=\"2021-10-02::T02:23:35\" -DBUILD_DIR=\"/umbc/xfs1/gobbert/common/research/poisson/takiFirstTests/source211002_Intel2021a\"  -c utilities.c -o utilities.o
+mpiicc -qopt-zmm-usage=high -xCORE-AVX512 -O3 -std=c99 -Wall -mkl  -DPARALLEL  -DBUILD_DATE=\"2021-10-02::T02:23:35\" -DBUILD_DIR=\"/umbc/xfs1/gobbert/common/research/poisson/takiFirstTests/source211002_Intel2021a\"  -c Ax.c -o Ax.o
+mpiicc -qopt-zmm-usage=high -xCORE-AVX512 -O3 -std=c99 -Wall -mkl  -DPARALLEL  -DBUILD_DATE=\"2021-10-02::T02:23:35\" -DBUILD_DIR=\"/umbc/xfs1/gobbert/common/research/poisson/takiFirstTests/source211002_Intel2021a\"  -c cg.c -o cg.o
+mpiicc -qopt-zmm-usage=high -xCORE-AVX512 -O3 -std=c99 -Wall -mkl  -DPARALLEL  -DBUILD_DATE=\"2021-10-02::T02:23:35\" -DBUILD_DIR=\"/umbc/xfs1/gobbert/common/research/poisson/takiFirstTests/source211002_Intel2021a\"  -c check_memory.c -o check_memory.o
+mpiicc -qopt-zmm-usage=high -xCORE-AVX512 -O3 -std=c99 -Wall -mkl  -DPARALLEL  -DBUILD_DATE=\"2021-10-02::T02:23:35\" -DBUILD_DIR=\"/umbc/xfs1/gobbert/common/research/poisson/takiFirstTests/source211002_Intel2021a\"  -c nodesused.c -o nodesused.o
+mpiicc -qopt-zmm-usage=high -xCORE-AVX512 -O3 -std=c99 -Wall -mkl  -DPARALLEL  -DBUILD_DATE=\"2021-10-02::T02:23:35\" -DBUILD_DIR=\"/umbc/xfs1/gobbert/common/research/poisson/takiFirstTests/source211002_Intel2021a\"  -c diag_time.c -o diag_time.o
+mpiicc -qopt-zmm-usage=high -xCORE-AVX512 -O3 -std=c99 -Wall -mkl  -DPARALLEL  -DBUILD_DATE=\"2021-10-02::T02:23:35\" -DBUILD_DIR=\"/umbc/xfs1/gobbert/common/research/poisson/takiFirstTests/source211002_Intel2021a\"  -c outputs.c -o outputs.o
+mpiicc -qopt-zmm-usage=high -xCORE-AVX512 -O3 -std=c99 -Wall -mkl  -DPARALLEL  -DBUILD_DATE=\"2021-10-02::T02:23:35\" -DBUILD_DIR=\"/umbc/xfs1/gobbert/common/research/poisson/takiFirstTests/source211002_Intel2021a\"  main.o memory.o utilities.o Ax.o cg.o check_memory.o nodesused.o diag_time.o outputs.o -o poisson -lm
+
